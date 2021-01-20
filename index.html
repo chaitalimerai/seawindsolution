@@ -1,1 +1,518 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seawind | Home</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/vendors/css/bootstrap.min.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/vendors/css/animate.min.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./assets/vendors/css/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- main wrapper -->
+    <div class="main_wrapper">
+        <!-- header -->
+        <header class="main_header navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo_row">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/images/logo.png" class="logo" alt="">
+                    </a>
+                    <button class="btn open-nav toggle_bars_btn d-flex d-lg-none" onclick="toggleSidebar()"
+                        type="button" aria-label="Toggle navigation">
+                        <i></i>
+                        <!-- <img src="./assets/images/icons/bars_icon.svg" class="toggle_icons" alt="Bar Icon"> -->
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="header_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ends: header -->
+
+        <!-- primary-nav sidebar -->
+        <aside class="main_header primary_nav" id="primary_nav">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo_row">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo.png" class="logo" alt="">
+                        </a>
+                        <button class="btn toggle_bars_btn" id="close_icon" onclick="toggleSidebar()" type="button">
+                            <img src="./assets/images/icons/close_icon.svg" class="toggle_icons" alt="Bar Icon">
+                        </button>
+                    </div>
+                    <div class="content-body" id="header_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- ends: primary-nav sidebar -->
+
+        <!-- main content -->
+        <main class="content_wrapper">
+            <!-- banner slider -->
+            <section class="banner_slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner_overlay">
+                            <img src="./assets/images/banners/banner1.jpg" class="banner_slide_img" alt="slide1">
+                        </div>
+                        <div class="container card_container">
+                            <div class="banner_card card">
+                                <h1>Swastik Provide<br>Best Products For<br>Your Company</h1>
+                                <button type="button" class="btn btn-primary">learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_overlay">
+                            <img src="./assets/images/banners/banner2.png" class="banner_slide_img" alt="slide1">
+                        </div>
+                        <div class="container card_container">
+                            <div class="banner_card card">
+                                <h1>Swastik Provide<br>Best Products For<br>Your Company2</h1>
+                                <button type="button" class="btn btn-primary">learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_overlay">
+                            <img src="./assets/images/banners/banner6.jpg" class="banner_slide_img" alt="slide1">
+                        </div>
+                        <div class="container card_container">
+                            <div class="banner_card card">
+                                <h1>Swastik Provide<br>Best Products For<br>Your Company3</h1>
+                                <button type="button" class="btn btn-primary">learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact us section -->
+            <section class="contact_section">
+                <div class="contact_container container">
+                    <h4>are you looking best products <span>for your company?</span></h4>
+                    <a href="#" class="btn btn-light">contact us</a>
+                </div>
+            </section>
+            <!-- application section -->
+            <section class="common_section application_section">
+                <div class="container">
+                    <div class="title_row">
+                        <h2 class="title">latest&nbsp;<span>applications</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/factories_icon.png" alt="factories icon">
+                            <h6>Factories</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/warehouse_icon.png" alt="factories icon">
+                            <h6>Warehouse</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/aircraft_icon.png" alt="factories icon">
+                            <h6>Aircraft Hangars</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/auditorium_icon.png" alt="auditorium icon">
+                            <h6>auditorium</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/factories_icon.png" alt="showrooms icon">
+                            <h6>showrooms, school, hospital etc.</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+                        <div class="application_block col-md-4">
+                            <img src="./assets/images/icons/fuel_icon.png" alt="fuel icon">
+                            <h6>fuel station, bus shelters etc.</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nihil quos aliquid ipsam
+                                alias deleniti impedit<br>facilis!
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- about section -->
+            <section class="about_section">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./assets/images/banner1.jpg" class="img-fluid" alt="banner1">
+                    </div>
+                    <div class="about_block col-md-6">
+                        <div class="title_row">
+                            <h2 class="title">about&nbsp;<span>swatik</span></h2>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <p class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam distinctio
+                                    eveniet molestiae soluta totam, architecto dolorum sed repellendus vero corporis
+                                    doloremque autem eius nihil iste unde harum qui consectetur, cumque nam accusamus
+                                    possimus perspiciatis numquam ab. Ab, maxime cum, alias id voluptates beatae,
+                                    corporis
+                                    excepturi numquam eligendi veniam recusandae!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam distinctio
+                                    eveniet molestiae soluta totam, architecto dolorum sed repellendus vero corporis
+                                    doloremque autem eius nihil iste unde harum qui consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- product section -->
+            <section class="product_section">
+                <div class="title_row">
+                    <h2 class="title">latest&nbsp;<span>products</span></h2>
+                </div>
+                <div class="product_slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro1.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro2.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro3.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro4.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro1.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro2.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro3.jpg" class="product_img" alt="product1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pro4.jpg" class="product_img" alt="product1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- people section -->
+            <section class="people_section">
+                <div class="title_row">
+                    <h2 class="title mb-0">people what&nbsp;<span>says</span></h2>
+                </div>
+                <div class="container">
+                    <div class="people_slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user3.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user2.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user1.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user3.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn4 - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user2.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn5 - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="people_card card">
+                                    <img src="./assets/images/user1.png" class="user_profile" alt="user3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic harum, ullam
+                                        consequatur eius rem suscipit impedit dicta saepe quis atque! Aut ea eos officia
+                                        officiis molestias illo natus nisi eligendi?
+                                    </p>
+                                    <div class="author_row">
+                                        <h6>jamy lynn6 - </h6>
+                                        <p>Maneger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- client section -->
+            <section class="common_section client_section">
+                <div class="title_row">
+                    <h2 class="title">our&nbsp;<span>clients</span></h2>
+                </div>
+                <div class="container">
+                    <div class="client_slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client1.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client2.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client3.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client4.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client5.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client6.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client7.png" class="client_img" alt="product1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/client8.png" class="client_img" alt="product1">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="top_row_footer">
+                    <div class="container">
+                        <div class="row g-0">
+                            <div class="footer_block col-md-3">
+                                <h6>about <span>us</span></h6>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptatem tempora
+                                    quod
+                                    est ipsa, nobis ex? Magni ullam hic nulla exercitationem, mollitia odit id, quisquam
+                                    delectus dignissimos facere quod ab.</p>
+                                <div class="social_icons_row">
+                                    <a href="#">
+                                        <img src="./assets/images/icons/fb_icon.png" alt="fb_icon">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/images/icons/twitter_icon.png" alt="twitter_icon">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/images/icons/likedin_icon.png" alt="likedin_icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer_block col-md-3">
+                                <h6>quick <span>links</span></h6>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>Home</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>about us</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>products</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>clients</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>contact us</span>
+                                </a>
+                            </div>
+                            <div class="footer_block col-md-3">
+                                <h6>our <span>products</span></h6>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>conventional shed</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>self supported roof</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>pre enginnering building</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>tensile roof</span>
+                                </a>
+
+                            </div>
+                            <div class="footer_block col-md-3">
+                                <h6>get in <span>touch</span></h6>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>conventional shed</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>self supported roof</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>pre enginnering building</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span>tensile roof</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_copyright_row">
+                    <div class="container">
+                        Copyright <span id="current_year"></span> Swatik Enterprize | Designed & Developed by 
+                        <a href="https://www.seawindsolution.com/">Seawind Solution Pvt. Ltd.</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!-- ends: main content -->
+    </div>
+    <!-- ends: main wrapper -->
+
+    <!-- javascripts -->
+    <script src="./assets/vendors/jquery/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./assets/vendors/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper JS -->
+    <script src="./assets/vendors/js/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

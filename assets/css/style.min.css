@@ -1,0 +1,636 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('./custom_components.css');
+/* ============== colors =============== */
+
+:root {
+    --transparent: transparent;
+    --white: #ffffff;
+    --black: #000000;
+    --primary: #d23d4e;
+    --dark: #2e2f2f;
+    --blue: #23244a;
+    --blue100: #5f5788;
+    --gray: #757676;
+    --gray100: #dddddd;
+    /* font variables */
+    --baseFont: 'Oswald', sans-serif;
+    --secondaryFont: Arial, Helvetica, sans-serif;
+    --fontExtraLight: 200;
+    --fontLight: 300;
+    --fontRegular: 400;
+    --fontMedium: 500;
+    --fontSemiBold: 600;
+    --fontBold: 700;
+}
+
+/* ============== ends: colors =============== */
+
+/* ============== base css =============== */
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--white);
+    font-family: var(--baseFont);
+    font-size: 16px;
+    font-weight: var(--fontRegular);
+    color: var(--primary100);
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: var(--secondaryFont);
+    font-weight: var(--fontRegular);
+    margin: 0 !important;
+}
+
+p {
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--blue100);
+}
+
+h1, h4 {
+    color: var(--white);
+    font-family: var(--fontSecondary) !important;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: var(--fontBold) !important;
+    text-align: right;
+}
+
+h4 {
+    font-weight: var(--fontBold) !important;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-weight: var(--fontBold) !important;
+    text-transform: capitalize;
+    color: var(--blue);
+    text-align: center;
+    margin: 50px 0 !important;
+    white-space: nowrap;
+}
+
+h6 {
+    font-weight: var(--fontBold) !important;
+    text-transform: capitalize;
+    color: var(--blue);
+}
+
+.title_row {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.title span {
+    color: var(--primary);
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 30px;
+    background-color: var(--primary);
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 60px;
+    height: 2px;
+    width: 30px;
+    background-color: var(--gray100);
+}
+
+button, input, textarea {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.form-group {
+    position: relative;
+}
+
+/* scrolll bar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bebebe;
+    cursor: pointer !important;
+}
+
+/* ============== Ends: base css =============== */
+
+.main_wrapper, .content_wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_wrapper {
+    overflow: hidden;
+}
+
+.content_wrapper {
+    overflow: auto;
+}
+
+.common_section {
+    margin-bottom: 50px;
+}
+
+/* ============== ends: main classes css ============== */
+
+/* ============== main header css ============== */
+
+.main_header {
+    background: #ffffff;
+}
+
+.main_header .logo_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main_header .logo {
+    width: 200px;
+}
+
+.main_header .navbar-brand {
+    background-color: var(--white);
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+}
+
+.main_header .toggle_bars_btn {
+    border: 0;
+    background: transparent !important;
+    padding: 0;
+    box-shadow: none;
+    position: absolute;
+    right: 20px;
+}
+
+.main_header .open-nav i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 2px;
+    width: 25px;
+    transition: all .3s ease-in-out;
+    background: #000;
+    padding: 0 10px;
+}
+
+.main_header .open-nav i:before {
+    position: absolute;
+    top: -9px;
+    content: " ";
+    height: 2px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    background: #000;
+}
+
+.main_header .open-nav i:after {
+    position: absolute;
+    top: 9px;
+    content: " ";
+    height: 2px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    background: #000;
+}
+
+.main_header .toggle_bars_btn .toggle_icons {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.main_header .navbar-nav .nav-item {
+    display: inline-flex;
+}
+
+.main_header .navbar-nav .nav-link {
+    font-size: 14px;
+    color: var(--blue100);
+    font-weight: var(--fontMedium);
+    padding: 5px 0 !important;
+    margin: 0 10px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+}
+
+.main_header .navbar-nav .nav-link:hover, .main_header .navbar-nav .nav-link.active, .main_header .navbar-nav .nav-link:active {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.main_header .navbar-nav .dropdown-item {
+    width: auto;
+}
+
+/* ============== ends: main header css ============== */
+
+/* =====================primary nav===================== */
+
+.primary_nav {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -800px;
+    z-index: 9;
+    background-color: var(--white);
+    box-shadow: -3px 1px 13px 0px #e2e2e2;
+    transition: all 500ms ease;
+}
+
+.primary_nav #close_icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 0 !important;
+}
+
+.primary_nav.toggleActive {
+    left: 0;
+}
+
+.primary_nav .content-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============== ends: primary nav css ============== */
+
+/* ============== banner slider css ============== */
+
+.banner_slider .swiper-wrapper, .banner_slider .swiper-slide, .banner_slider .banner_overlay {
+    position: relative;
+}
+
+.banner_slider, .banner_slider .swiper-slide, .banner_slider .banner_overlay {
+    width: 100%;
+}
+
+.banner_slider {
+    overflow: unset !important;
+}
+
+.banner_slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.banner_slider .banner_overlay::before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(16, 18, 42, 0.6);
+}
+
+.banner_slider .banner_slide_img {
+    height: 500px;
+    min-height: 70vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner_slider .card_container {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.banner_slider .banner_card {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: var(--transparent);
+    flex-direction: column;
+    align-items: flex-end;
+    border: 0;
+}
+
+.banner_slider .banner_card h1 {
+    margin-bottom: 15px !important;
+}
+
+/* ============== ends: banner slider css ============== */
+
+/* ============== contact section ============== */
+
+.contact_section {
+    background-color: var(--primary);
+    padding: 30px;
+}
+
+.contact_section .contact_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_section h4 span {
+    font-weight: var(--fontLight);
+}
+
+.contact_section .btn {
+    border-radius: 0;
+}
+
+/* ============== ends: contact section css ============== */
+
+/* ============== application section css ============== */
+
+.application_section .row {
+    margin: 0 30px;
+}
+
+.application_section .application_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+    border-right: 1px dashed var(--gray100);
+    border-bottom: 1px dashed var(--gray100);
+}
+
+.application_section .application_block:nth-last-child(-n+3) {
+    border-bottom: 0;
+}
+
+.application_section .application_block h6 {
+    margin: 10px 0 !important;
+}
+
+/* ============== ends: application section css ============== */
+
+/* ============== about section css ============== */
+
+.about_section {
+    height: 100%;
+}
+
+.about_section .about_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    background-color: var(--blue);
+}
+
+.about_section .about_block .title_row, .about_section .about_block .title {
+    justify-content: flex-start;
+}
+
+.about_section .about_block .title::after {
+    left: 30px;
+}
+
+.about_section .about_block .title::before {
+    left: 0;
+}
+
+.about_section .about_block h2 {
+    margin: 0 0 30px 0 !important
+}
+
+.about_section .about_block p, .about_section .about_block h2 {
+    color: var(--white);
+}
+
+/* ============== ends: about section css ============== */
+
+/* ============== product section css ============== */
+
+.product_section .product_img {
+    height: 330px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ============== ends: product section css ============== */
+
+/* ============== people section css ============== */
+
+.people_section .people_card {
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 7px #dddddd;
+    border: 0;
+    border-radius: 0;
+    margin: 60px 20px;
+    padding: 30px 20px;
+}
+
+.people_section .user_profile {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.people_section p {
+    font-style: italic;
+    color: var(--dark);
+    opacity: 0.8;
+    font-size: 12px;
+    margin: 10px 0 !important;
+    font-weight: var(--fontSemiBold) !important;
+}
+
+.people_section .author_row {
+    display: flex;
+    align-items: baseline;
+}
+
+.people_section .author_row h6 {
+    text-transform: uppercase;
+    padding-right: 5px;
+    color: var(--primary);
+    font-size: 13px;
+}
+
+.people_section .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: -6px;
+}
+
+.people_section .swiper-pagination-bullet {
+    background: transparent;
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    border-radius: 0;
+    border: 2px solid var(--transparent);
+    outline: 0 !important;
+    position: relative;
+}
+
+.people_section .swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    background: var(--dark);
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    top: 3px;
+}
+
+.people_section .swiper-pagination-bullet-active {
+    background: transparent;
+    border: 2px solid var(--primary);
+}
+
+.people_section .swiper-pagination-bullet-active::before {
+    background: var(--primary);
+}
+
+/* ============== ends: people section css ============== */
+
+/* ============== product section css ============== */
+
+.client_section .swiper-wrapper {
+    margin: 10px;
+}
+
+.client_section .client_img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    /* border: 1px solid var(--gray100); */
+    box-shadow: 0px 0px 7px 4px #ddd;
+}
+
+/* ============== ends: product section css ============== */
+
+/* ============== footer section css ============== */
+
+.top_row_footer {
+    background-color: #121628;
+    padding: 30px 0;
+}
+
+.footer .footer_block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.footer .footer_block h6 {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: var(--fontMedium);
+    text-transform: uppercase;
+    margin-bottom: 15px !important;
+}
+
+.footer .footer_block h6 span {
+    color: var(--primary);
+}
+
+.footer .footer_block p {
+    color: var(--white);
+    font-size: 12px;
+    margin-bottom: 15px !important;
+}
+
+.footer .social_icons_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .social_icons_row img {
+    margin-right: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .footer_block a {
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.footer .footer_block a span {
+    padding-left: 5px;
+}
+
+.footer .footer_block a:hover {
+    color: var(--primary);
+}
+
+.footer .footer_copyright_row {
+    background-color: var(--primary);
+    padding: 15px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: var(--fontMedium);
+    text-align: center;
+}
+
+.footer .footer_copyright_row a {
+    color: var(--dark);
+}
+
+.footer .footer_copyright_row a:hover {
+    color: var(--white);
+}
+
+/* ============== ends: footer section css ============== */

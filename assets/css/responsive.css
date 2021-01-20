@@ -1,0 +1,54 @@
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199px) {}
+
+/* only width - 1024 */
+
+@media only screen and (width: 1024px) {}
+
+/* Desktop devices (desktops, less than 1000px) */
+
+@media (min-width: 992px) {
+    .primary_nav {
+        display: none;
+    }
+    .main_header .logo_row {
+        width: auto;
+    }
+}
+
+/* Small devices (portrait phones, landscape phones, less than 768px) */
+
+@media (max-width: 768px) {
+    .primary_nav .navbar-brand {
+        position: unset;
+    }
+    .primary_nav .logo_row {
+        align-items: flex-start;
+    }
+    .main_header.navbar {
+        padding: 25px 0 !important;
+    }
+   
+    .main_header .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767px) {
+    .contact_section .contact_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact_section .contact_container h4 {
+        margin-bottom: 15px !important;
+    }
+    .application_section .row {
+        margin: auto;
+    }
+    .application_section .application_block {
+        border: 1px dashed var(--gray100);
+    }
+}
