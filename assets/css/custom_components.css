@@ -16,8 +16,8 @@
     font-family: var(--fontSecondary);
     font-size: 14px !important;
     text-transform: uppercase;
-    font-weight: var(--fontMedium) !important;
-    color: var(--black);
+    font-weight: var(--fontBold) !important;
+    color: var(--white);
     padding: 7px 25px !important;
     display: flex;
     justify-content: center;

@@ -1,0 +1,122 @@
+h1 {
+    font-size: 72px;
+    background-image: -webkit-linear-gradient(#de8106, #34aa3e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+h1:after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 1px 1px 2px #000;
+    top: 0;
+    z-index: -1;
+}
+
+.cover-slider__wrap {
+    position: relative;
+    margin: 2em auto;
+    padding: 10px 0;
+}
+
+.cover-slider__inner {
+    position: relative;
+    min-height: 40em;
+    text-align: center;
+    z-index: 10;
+}
+
+.cover-slider {
+    backface-visibility: hidden;
+}
+
+.cover-slider__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: top;
+    list-style: none;
+    z-index: 0;
+}
+
+.cover-slider__slide.active {
+    animation-duration: 2500ms;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+}
+
+.cover-slider__slide.inactive {
+    animation-duration: 2500ms;
+    animation-name: slideout;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+    from {
+        left: 0;
+        right: 100%;
+    }
+    to {
+        left: 0;
+        right: 0;
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 0;
+        right: 0;
+    }
+    to {
+        left: 100%;
+        right: 0;
+    }
+}
+
+.cover-slider__slide:nth-child(1) {
+    background-image: url("../images/banners/banner7.jpg");
+}
+
+.cover-slider__slide:nth-child(2) {
+    background-image: url("../images/banners/banner8.jpg");
+}
+
+.cover-slider__slide:nth-child(3) {
+    background-image: url("../images/banners/banner9.jpg");
+}
+
+.cover-slider__slide:nth-child(4) {
+    background-image: url("../images/banners/banner11.jpg");
+}
+
+.cover-slider__slide:nth-child(5) {
+    background-image: url("../images/banners/banner12.jpg");
+}
+
+.cover-slider__slide:nth-child(6) {
+    background-image: url("../images/banners/banner13.jpg");
+}
+
+.cover-slider__slide:nth-child(7) {
+    background-image: url("../images/banners/banner14.jpg");
+}
+.cover-slider__slide:nth-child(8) {
+    background-image: url("../images/banners/banner15.jpg");
+}
+.cover-slider__slide:nth-child(9) {
+    background-image: url("../images/banners/banner16.jpg");
+}
+
+.hide {
+    position: absolute;
+    left: -9999px;
+}

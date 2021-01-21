@@ -9,6 +9,7 @@
     --primary: #d23d4e;
     --dark: #2e2f2f;
     --blue: #23244a;
+    --darkBlue: #121628;
     --blue100: #5f5788;
     --gray: #757676;
     --gray100: #dddddd;
@@ -39,7 +40,7 @@ body {
     font-weight: var(--fontRegular);
     color: var(--primary100);
     line-height: 1.5;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a {
@@ -69,11 +70,6 @@ h1 {
     text-align: right;
 }
 
-h4 {
-    font-weight: var(--fontBold) !important;
-    text-transform: capitalize;
-}
-
 h2 {
     font-weight: var(--fontBold) !important;
     text-transform: capitalize;
@@ -81,6 +77,11 @@ h2 {
     text-align: center;
     margin: 50px 0 !important;
     white-space: nowrap;
+}
+
+h4 {
+    font-weight: var(--fontBold) !important;
+    text-transform: capitalize;
 }
 
 h6 {
@@ -136,36 +137,36 @@ button, input, textarea {
 /* scrolll bar */
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 0px transparent;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #bebebe;
+    background: var(--gray);
     cursor: pointer !important;
 }
 
 /* ============== Ends: base css =============== */
 
 .main_wrapper, .content_wrapper {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.main_wrapper {
+/* .main_wrapper {
     overflow: hidden;
 }
 
 .content_wrapper {
     overflow: auto;
-}
+} */
 
 .common_section {
     margin-bottom: 50px;
@@ -176,7 +177,12 @@ button, input, textarea {
 /* ============== main header css ============== */
 
 .main_header {
-    background: #ffffff;
+    background: var(--white);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px 7px 0px var(--gray100);
 }
 
 .main_header .logo_row {
@@ -207,6 +213,9 @@ button, input, textarea {
     right: 20px;
 }
 
+.main_header .open-nav{
+    top: 16px;
+}
 .main_header .open-nav i {
     position: absolute;
     top: 50%;
@@ -251,7 +260,7 @@ button, input, textarea {
 .main_header .navbar-nav .nav-link {
     font-size: 14px;
     color: var(--blue100);
-    font-weight: var(--fontMedium);
+    font-weight: var(--fontBold);
     padding: 5px 0 !important;
     margin: 0 10px;
     text-transform: capitalize;
@@ -269,42 +278,6 @@ button, input, textarea {
 }
 
 /* ============== ends: main header css ============== */
-
-/* =====================primary nav===================== */
-
-.primary_nav {
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -800px;
-    z-index: 9;
-    background-color: var(--white);
-    box-shadow: -3px 1px 13px 0px #e2e2e2;
-    transition: all 500ms ease;
-}
-
-.primary_nav #close_icon {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    padding: 0 !important;
-}
-
-.primary_nav.toggleActive {
-    left: 0;
-}
-
-.primary_nav .content-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* ============== ends: primary nav css ============== */
 
 /* ============== banner slider css ============== */
 
@@ -350,6 +323,7 @@ button, input, textarea {
     position: absolute;
     display: flex;
     align-items: center;
+    top: 25px;
 }
 
 .banner_slider .banner_card {
@@ -373,6 +347,9 @@ button, input, textarea {
 .contact_section {
     background-color: var(--primary);
     padding: 30px;
+}
+.contact_section .btn {
+   color: var(--dark);
 }
 
 .contact_section .contact_container {
@@ -419,16 +396,22 @@ button, input, textarea {
 
 /* ============== about section css ============== */
 
-.about_section {
+/* .about_section {
     height: 100%;
+} */
+
+.about_section .left_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about_section .about_block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 35px;
-    background-color: var(--blue);
+    padding:70px 30px;
+    background-color: var(--darkBlue);
 }
 
 .about_section .about_block .title_row, .about_section .about_block .title {
@@ -502,10 +485,6 @@ button, input, textarea {
     font-size: 13px;
 }
 
-.people_section .swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: -6px;
-}
-
 .people_section .swiper-pagination-bullet {
     background: transparent;
     opacity: 1;
@@ -557,7 +536,7 @@ button, input, textarea {
 /* ============== footer section css ============== */
 
 .top_row_footer {
-    background-color: #121628;
+    background-color:var(--darkBlue);
     padding: 30px 0;
 }
 

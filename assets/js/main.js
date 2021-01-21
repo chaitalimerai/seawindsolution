@@ -1,12 +1,15 @@
 // sidebar toggle 
-function toggleSidebar() {
+// function toggleSidebar() {
+// 	$(".primary_nav").toggleClass("toggleActive");
+// }
+$(".toggle_bars_btn").click(function () {
 	$(".primary_nav").toggleClass("toggleActive");
-}
-$("#current_year").text( (new Date).getFullYear() );
+});
+
+$("#current_year").text((new Date).getFullYear());
 // client slider
 var swiper = new Swiper('.client_slider', {
-	speed: 1000,
-	spaceBetween: 10,
+	speed: 500,
 	grabCursor: true,
 	keyboard: {
 		enabled: true,
@@ -20,20 +23,23 @@ var swiper = new Swiper('.client_slider', {
 		disableOnInteraction: false,
 	},
 	breakpoints: {
-		640: {
-			slidesPerView: 1,
+		320: {
+			slidesPerView: 2,
+			spaceBetween: 20,
 		},
 		768: {
-			slidesPerView: 5,
+			slidesPerView: 4,
+			spaceBetween: 10,
 		},
 		1024: {
 			slidesPerView: 6,
+			spaceBetween: 40,
 		},
 	}
 });
 // product slider
 var swiper = new Swiper('.product_slider', {
-	speed: 1000,
+	speed: 300,
 	spaceBetween: 0,
 	grabCursor: true,
 	keyboard: {
@@ -48,7 +54,7 @@ var swiper = new Swiper('.product_slider', {
 		disableOnInteraction: false,
 	},
 	breakpoints: {
-		640: {
+		320: {
 			slidesPerView: 1,
 		},
 		768: {
@@ -61,7 +67,7 @@ var swiper = new Swiper('.product_slider', {
 });
 // people slider
 var swiper = new Swiper('.people_slider', {
-	speed: 1000,
+	speed: 2000,
 	spaceBetween: 30,
 	grabCursor: true,
 	keyboard: {
@@ -76,7 +82,7 @@ var swiper = new Swiper('.people_slider', {
 		disableOnInteraction: false,
 	},
 	breakpoints: {
-		640: {
+		320: {
 			slidesPerView: 1,
 		},
 		768: {
