@@ -34,7 +34,7 @@
         height: 100%;
         top: 0;
         left: -800px;
-        z-index: 9;
+        z-index: 99;
         background-color: var(--white);
         box-shadow: -3px 1px 13px 0px #e2e2e2;
         transition: all 500ms ease;
@@ -48,7 +48,7 @@
     }
     .primary_nav.toggleActive {
         left: 0;
-        top: 45px;
+        top: 0px;
     }
     .primary_nav .content-body {
         width: 100%;
